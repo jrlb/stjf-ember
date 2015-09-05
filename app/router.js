@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('press');
+  this.route('donations');
+  this.route('donors');
+  this.route('members');
 });
 
 export default Router;
