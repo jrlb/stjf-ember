@@ -1,8 +1,10 @@
 <div class="single_block">
     <h2><span>//</span>events</h2>
-    <div class="performance">
-        <i class="fa fa-star"></i>
-        <h3>Performance @ Cadillac Bar</h3>
-        <span>November 24 @ 7:30 pm</span>
-    </div>
+    {{#each events as |event|}}
+        <div class="performance">
+            <i class="fa fa-star"></i>
+            <h3>{{event.title}}</h3>
+            <span>{{moment-format event.startDate "MMMM Do @ h:mm a"}}</span>
+        </div>
+    {{/each}}
 </div>
