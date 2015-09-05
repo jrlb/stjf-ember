@@ -1,0 +1,23 @@
+<div class="center-block">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        {{#link-to 'admin.events' tagName='li' activeClass='active'}}
+            {{#link-to 'admin.events'}}
+                Events
+            {{/link-to}}
+        {{/link-to}}
+
+        {{#link-to 'admin.members' tagName='li' activeClass='active'}}
+            {{#link-to 'admin.members'}}
+                Members
+            {{/link-to}}
+        {{/link-to}}
+
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active">
+            {{outlet}}
+        </div>
+    </div>
+</div>

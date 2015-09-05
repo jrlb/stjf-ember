@@ -10,6 +10,10 @@ Router.map(function() {
   this.route('donations');
   this.route('donors');
   this.route('members');
+  this.route('admin', function() {
+    this.route('members');
+    this.route('events');
+  });
 });
 
 export default Router;
