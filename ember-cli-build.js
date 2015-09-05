@@ -23,5 +23,8 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
+  app.import('bower_components/ResponsiveSlides/responsiveslides.css');
+  app.import('bower_components/ResponsiveSlides/responsiveslides.js');
   return app.toTree();
 };
