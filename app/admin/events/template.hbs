@@ -1,2 +1,16 @@
-EVENTS
-{{outlet}}
+<br><br>
+{{link-to 'Create Event' 'admin.events.new' tagName='button'}}
+<br><br><br>
+<div class="row">
+    <div class="col-sm-4">
+        <ul>
+            {{#each events as |event|}}
+                <li>{{event.title}} - {{#link-to 'admin.events.edit' event}}edit{{/link-to}} | <button {{action 'delete' event}}>delete</button></li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-sm-8">
+        {{outlet}}
+    </div>
+</div>
+<br><br>

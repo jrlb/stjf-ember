@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+      <label for="exampleInputTitle">Title</label>
+      {{input class="form-control" id="exampleInputTitle" placeholder="Title" value=title}}
+  </div>
+  <div class="form-group">
+      <label for="exampleInputDate">Date</label>
+      {{pikaday-input value=date format="MM/DD/YYYY" class="form-control"}}
+  </div>
+  <button type="submit" class="btn btn-default" {{action 'save'}}>Submit</button>
+</form>
